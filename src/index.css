@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: anzo;
+  src: url(./assets/file.woff2);
+}
+
+@font-face {
+  font-family: anzo1;
+  src: url(./assets/file1.woff2);
+}
+
+@font-face {
+  font-family: anzo2;
+  src: url(./assets/file2.woff2);
+}
+
+/* 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+
+html,body{
+ line-height: normal;
+ overflow-x: hidden;
+} 
