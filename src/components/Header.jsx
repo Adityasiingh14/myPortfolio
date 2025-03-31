@@ -1,11 +1,12 @@
 import { useGSAP } from "@gsap/react";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import 'remixicon/fonts/remixicon.css';
 import gsap from "gsap";
 
 const Header = () => {
   const logoRef = useRef(null);
   const [isDropped, setIsDropped] = useState(false);
+  
 
   // Set initial position
   useGSAP(() => {
@@ -36,10 +37,10 @@ const Header = () => {
       />
       
       <div className="flex items-center">
-        <button className="bg-black border-4 text-xl px-4 py-2 hover:bg-gray-500 rounded-full">
+        <button className="bg-black border-3 text-xl px-4 py-2 hover:bg-gray-500 rounded-full">
           Hire me
         </button>
-        <i className="ri-more-2-fill text-3xl ml-3"></i>
+        <i className="ri-more-2-fill text-3xl ml-3 text-gray-500"></i>
       </div>
     </div>
   );
