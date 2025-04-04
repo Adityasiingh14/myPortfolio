@@ -11,13 +11,13 @@ const Page2 = () => {
   useGSAP(() => {
 
     gsap.set('#section', {
-        perspective: 3000,
+        perspective: 1000,
         overflow: 'hidden',
     });
     
     textRefs.current.forEach((el) => {
       gsap.from(el, {
-        rotateX: -80,
+        rotateX: -60,
         opacity: 0,
         duration: 1,
         ease: "power2.out",

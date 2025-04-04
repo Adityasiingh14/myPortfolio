@@ -50,12 +50,12 @@ const Page1 = () => {
     }
   };
   return (
-    <div className="h-screen px-4 py-4 bg-white">
+    <div className="h-screen px-2 py-2 bg-white">
       <div
         onMouseMove={(e) => {
           mouseMoving(e);
         }}
-        className=" pt-30 shadow-xl shadow-gray-700 h-full w-full rounded-3xl bg-[url(/portfolio.jpg)] bg-cover bg-no-repeat bg-[right_50%_top_30%] "
+        className=" pt-30 shadow-xl shadow-gray-700 h-full w-full rounded-lg bg-[url(/portfolio.jpg)] bg-cover bg-no-repeat bg-[right_50%_top_30%] "
       >
         <TiltText tiltRef={tiltRef} />
         <Page1Bottom />

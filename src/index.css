@@ -27,4 +27,15 @@ html,body{
  overflow-x: hidden;
 } 
 
-#
+.no-scrollbar{
+          pointer-events: none; /* Disable mouse events */
+          user-select: none; /* Prevent text selection */
+          -webkit-user-drag: none; /* Disable dragging */
+          -webkit-touch-callout: none; /* Disable long-press options on mobile */
+          overflow: hidden; /* Hide any accidental scroll */
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
